@@ -1,0 +1,501 @@
+{% extends 'base.html' %}
+tfhbfdytyjuty
+{% block title %} Home {% endblock title %}
+
+{% block body %}
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <title>Job Portal </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="https://github.com/Sainathgirme7/job/blob/main/users/https://github.com/Sainathgirme7/job/blob/main/users/static/assets/img/favicon.ico?raw=true">
+
+		<!-- CSS here -->
+            <link rel="stylesheet" href="static/assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="static/assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="static/assets/css/flaticon.css">
+            <link rel="stylesheet" href="static/assets/css/price_rangs.css">
+            <link rel="stylesheet" href="static/assets/css/slicknav.css">
+            <link rel="stylesheet" href="static/assets/css/animate.min.css">
+            <link rel="stylesheet" href="static/assets/css/magnific-popup.css">
+            <link rel="stylesheet" href="static/assets/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="static/assets/css/themify-icons.css">
+            <link rel="stylesheet" href="static/assets/css/slick.css">
+            <link rel="stylesheet" href="static/assets/css/nice-select.css">
+            <link rel="stylesheet" href="static/assets/css/style.css">
+   </head>
+
+   <body>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="https://github.com/Sainathgirme7/job/blob/main/users/static/assets/img/logo/logo.png?raw=true?raw=true" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+       <div class="header-area header-transparrent">
+           <div class="headder-top header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-2">
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </div>
+        <!-- Header End -->
+    </header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    
+    body {
+      padding: 0px;
+      margin: 0px;
+      overflow-y: hidden;
+    }
+
+    .registration-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .video-container {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .registration-form {
+      flex: 3; /* 75% width for the form */
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+
+    .video {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100px; /* Adjust logo width as needed */
+      height: auto;
+      z-index: 1; /* Ensure logo is above video */
+    }
+
+
+    /* form css Start */
+
+    .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 550px;
+
+  padding: 0px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  color: royalblue;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: royalblue;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(0, 0, 0, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: royalblue;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  background-color: rgb(56, 90, 194);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+    /* form css End */
+  </style>
+</head>
+<body>
+  {% include 'messaging.html' %}
+  <div class="container-fluid row p-0 m-0" style="height: 710px;">
+
+    <div class="col-md-4 video-container" style="background-image: url(/static/image/slide2.png); background-size: cover; ">
+      {% comment %} <img src="static/logo/new logo.webp" alt="Logo" class="logo" style="width: 250px;"> {% endcomment %}
+      
+      <video autoplay loop muted class="video">
+        {% comment %} <source src="static/video/video2.mp4" type="video/mp4"> {% endcomment %}
+      </video>
+    </div>
+    <div class="col-md-8 registration-form" style="background-image: url(/static/image/bgformain1.jpeg); background-size: cover;">
+      <div id="validationAlerts"></div>
+            <div class="col-md-6">
+                  <form class="form" method="POST" onsubmit="return validateForm()">
+                    {% csrf_token %}
+                    <h2 class="text-center" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-bottom: -5px;">Sign up  HR</h2>
+              
+                            <p class="message">Signup now and get full access to our app. </p>
+                    
+                    <label>
+                            <input name="first_name" required="" placeholder="" type="text" class="input">
+                            <span>First Name</span>
+                    </label>
+                    <label>
+                      <input name="last_name" placeholder="" type="text" class="input">
+                      <span>Last Name</span>
+                    </label>
+                    <label>
+                      <input name="username" required="" placeholder="" type="text" class="input">
+                      <span>Username</span>
+                    </label>
+                    <label>
+                        <input name="email" required="" placeholder="" type="email" class="input">
+                        <span>Email</span>
+                    </label>
+                    <label>
+                      <input name="password1" id="password" required="" placeholder="" type="password" class="input">
+                      <span>Password</span>
+                    </label>
+                    <label>
+                      <input name="password2" id="confirmPassword" required="" placeholder="" type="password" class="input">
+                      <span>Confirm Password</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="ishr" id="hr-checkbox" class="input-field" required>
+                      <span>Are you HR?</span>
+                    </label> 
+
+                    <button type="submit" class="submit">Submit</button>
+                    <p class="signin">Already have an acount ? <a href="login">Signin</a> </p>
+                </form>
+                
+            </div>
+       
+    </div>
+
+  </div>
+
+  
+  
+  
+  
+  
+  <!-- Link Bootstrap JS (jQuery and Popper.js are required) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+<footer>
+  <!-- Footer Start-->
+  <div class="footer-area footer-bg footer-padding">
+      <div class="container">
+          <div class="row d-flex justify-content-between">
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                 <div class="single-footer-caption mb-50">
+                   <div class="single-footer-caption mb-30">
+                       <div class="footer-tittle">
+                           <h4>About Us</h4>
+                           <div class="footer-pera">
+                               <p>Heaven frucvitful doesn't cover lesser dvsays appear creeping seasons so behold.</p>
+                          </div>
+                       </div>
+                   </div>
+
+                 </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                  <div class="single-footer-caption mb-50">
+                      <div class="footer-tittle">
+                          <h4>Contact Info</h4>
+                          <ul>
+                              <li>
+                              <p>Address :Your address goes
+                                  here, your demo address.</p>
+                              </li>
+                              <li><a href="#">Phone : +91 9370320475</a></li>
+                              <li><a href="#">Email : info@jobportal.com</a></li>
+                          </ul>
+                      </div>
+
+                  </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                  <div class="single-footer-caption mb-50">
+                      <div class="footer-tittle">
+                          <h4>Important Link</h4>
+                          <ul>
+                              <li><a href="#"> View Project</a></li>
+                              <li><a href="#">Contact Us</a></li>
+                              <li><a href="#">Testimonial</a></li>
+                              <li><a href="#">Proparties</a></li>
+                              <li><a href="#">Support</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                  <div class="single-footer-caption mb-50">
+                      <div class="footer-tittle">
+                          <h4>Newsletter</h4>
+                          <div class="footer-pera footer-pera2">
+                           <p>Heaven fruitful doesn't over lesser in days. Appear creeping.</p>
+                       </div>
+                       <!-- Form -->
+                       <div class="footer-form" >
+                           <div id="mc_embed_signup">
+                               <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                               method="get" class="subscribe_form relative mail_part">
+                                   <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
+                                   class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
+                                   onblur="this.placeholder = ' Email Address '">
+                                   <div class="form-icon">
+                                       <button type="submit" name="submit" id="newsletter-submit"
+                                       class="email_icon newsletter-submit button-contactForm"><img src="assets/img/icon/form.png?raw=true" alt=""></button>
+                                   </div>
+                                   <div class="mt-10 info"></div>
+                               </form>
+                           </div>
+                       </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+         <!--  -->
+         <div class="row footer-wejed justify-content-between">
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                  <!-- logo -->
+                  <div class="footer-logo mb-20">
+                  <a href="index.html"><img src="https://github.com/Sainathgirme7/job/blob/main/users/static/assets/img/logo/logo2_footer.png?raw=true" alt=""></a>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+              <div class="footer-tittle-bottom">
+                  <span>5000+</span>
+                  <p>Talented Hunter</p>
+              </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                  <div class="footer-tittle-bottom">
+                      <span>451</span>
+                      <p>Talented Hunter</p>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                  <!-- Footer Bottom Tittle -->
+                  <div class="footer-tittle-bottom">
+                      <span>568</span>
+                      <p>Talented Hunter</p>
+                  </div>
+              </div>
+         </div>
+      </div>
+  </div>
+  <!-- footer-bottom area -->
+  <div class="footer-bottom-area footer-bg">
+      <div class="container">
+          <div class="footer-border">
+               <div class="row d-flex justify-content-between align-items-center">
+                   <div class="col-xl-10 col-lg-10 ">
+                       <div class="footer-copy-right">
+                           <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                       </div>
+                   </div>
+                   <div class="col-xl-2 col-lg-2">
+                       <div class="footer-social f-right">
+                           <a href="#"><i class="fab fa-facebook-f"></i></a>
+                           <a href="#"><i class="fab fa-twitter"></i></a>
+                           <a href="#"><i class="fas fa-globe"></i></a>
+                           <a href="#"><i class="fab fa-behance"></i></a>
+                       </div>
+                   </div>
+               </div>
+          </div>
+      </div>
+  </div>
+  <!-- Footer End-->
+</footer>
+
+<!-- JS here -->
+
+<!-- All JS Custom Plugins Link Here here -->
+  <script src="./static/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="./static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="./static/assets/js/popper.min.js"></script>
+  <script src="./static/assets/js/bootstrap.min.js"></script>
+<!-- Jquery Mobile Menu -->
+  <script src="./static/assets/js/jquery.slicknav.min.js"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+  <script src="./static/assets/js/owl.carousel.min.js"></script>
+  <script src="./static/assets/js/slick.min.js"></script>
+  <script src="./static/assets/js/price_rangs.js"></script>
+  
+<!-- One Page, Animated-HeadLin -->
+  <script src="./static/assets/js/wow.min.js"></script>
+<script src="./static/assets/js/animated.headline.js"></script>
+  <script src="./static/assets/js/jquery.magnific-popup.js"></script>
+
+<!-- Scrollup, nice-select, sticky -->
+  <script src="./static/assets/js/jquery.scrollUp.min.js"></script>
+  <script src="./static/assets/js/jquery.nice-select.min.js"></script>
+<script src="./static/assets/js/jquery.sticky.js"></script>
+  
+  <!-- contact js -->
+  <script src="./static/assets/js/contact.js"></script>
+  <script src="./static/assets/js/jquery.form.js"></script>
+  <script src="./static/assets/js/jquery.validate.min.js"></script>
+  <script src="./static/assets/js/mail-script.js"></script>
+  <script src="./static/assets/js/jquery.ajaxchimp.min.js"></script>
+  
+<!-- Jquery Plugins, main Jquery -->	
+  <script src="./static/assets/js/plugins.js"></script>
+  <script src="./static/assets/js/main.js"></script>
+  
+</body>
+</html>
+
+
+
+{% endblock body %}
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% block title %} {% endblock title %} | JOB PORTAL</title>
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+	<link rel="stylesheet" href="assets/css/price_rangs.css">
+	<link rel="stylesheet" href="assets/css/slicknav.css">
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <body>
+        <div class="fh5co-loader"></div>
+        {% include 'messaging.html' %}
+        <div id="page">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <img src="static/assets/img/logo/logo.png" alt="" style="width: 250px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            {% if user.is_superuser %}
+                            <li class="nav-item"><a class="nav-link" href="admin/">Admin</a></li>
+                            {% endif %}
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <!-- HR-specific links -->
+                            {% if request.session.is_hr %}
+                            <li class="nav-item"><a class="nav-link" href="hrdash">HR Dashboard</a></li>
+                            <li class="nav-item"><a class="nav-link" href="postjob">Post a Job</a></li>
+                            {% else %}
+                            <li class="nav-item"><a class="nav-link" href="dash">My Dashboard</a></li>
+                            <li class="nav-item"><a class="nav-link" href="applylist">My Job Applications</a></li>
+                            {% endif %}
+                            <li class="nav-item"><a class="nav-link" href="About">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Contact">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1e9pp0OXO384pL3Ns1vyJeDf0YIaiJw2p/view?usp=drive_link" target="_blank">Help</a></li>  <!-- Updated Help tab -->
+                            {% if user.is_authenticated %}
+                            <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">LogOut <i
+                                        class="fas fa-sign-out-alt"></i></a></li>
+                            {% else %}
+                            <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">LogIn <i
+                                        class="fas fa-sign-in-alt"></i></a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'register' %}">SignUp <i class="fas fa-user"></i></a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    
+            {% block body %}{% endblock body %}
+        </div>
+
+    
+
+	<!-- JS here -->
+	<!-- All JS Custom Plugins Link Here -->
+	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<!-- Jquery, Popper, Bootstrap -->
+	<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Jquery Mobile Menu -->
+	<script src="assets/js/jquery.slicknav.min.js"></script>
+	<!-- Jquery Slick , Owl-Carousel Plugins -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/price_rangs.js"></script>
+	<!-- One Page, Animated-HeadLin -->
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/animated.headline.js"></script>
+	<script src="assets/js/jquery.magnific-popup.js"></script>
+	<!-- Scrollup, nice-select, sticky -->
+	<script src="assets/js/jquery.scrollUp.min.js"></script>
+	<script src="assets/js/jquery.nice-select.min.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<!-- Contact JS -->
+	<script src="assets/js/contact.js"></script>
+	<script src="assets/js/jquery.form.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="assets/js/mail-script.js"></script>
+	<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+	<!-- Jquery Plugins, main Jquery -->
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
